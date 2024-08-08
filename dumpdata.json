@@ -1,0 +1,2295 @@
+[
+{
+    "model": "Nipracademy.course",
+    "pk": 1,
+    "fields": {
+        "name": "python programming",
+        "slug": "python programming",
+        "description": "this is a programming language",
+        "price": 999,
+        "duration": 24,
+        "discount": 25,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/Programming_language_uT2LRNK.png",
+        "date": "2024-03-08T18:00:22.456Z",
+        "resource": "",
+        "length": 20
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 2,
+    "fields": {
+        "name": "english speaking",
+        "slug": "english speaking",
+        "description": "this is a english speaking course",
+        "price": 999,
+        "duration": 1,
+        "discount": 5,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/English_speaking_9FuqPLZ.jfif",
+        "date": "2024-03-10T09:54:43.701Z",
+        "resource": "",
+        "length": 20
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 4,
+    "fields": {
+        "name": "statistics",
+        "slug": "statistics",
+        "description": "this a course for testing the statistics course",
+        "price": 4999,
+        "duration": 1,
+        "discount": 35,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/statistics_3.jpg",
+        "date": "2024-03-18T19:49:20.989Z",
+        "resource": "",
+        "length": 25
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 5,
+    "fields": {
+        "name": "mathmatics - 3 months",
+        "slug": "mathematics",
+        "description": "short discprition",
+        "price": 10000,
+        "duration": 3,
+        "discount": 15,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/Mathematics.jpg",
+        "date": "2024-04-04T18:14:40.666Z",
+        "resource": "",
+        "length": 30
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 6,
+    "fields": {
+        "name": "Hindi",
+        "slug": "Hindi",
+        "description": "this is a course for hindi subject.",
+        "price": 1000,
+        "duration": 3,
+        "discount": 10,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/Hindi_2.jpg",
+        "date": "2024-04-16T08:03:07.522Z",
+        "resource": "",
+        "length": 20
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 7,
+    "fields": {
+        "name": "psychology",
+        "slug": "psychology",
+        "description": "this i a subject of psychology(science)",
+        "price": 5000,
+        "duration": 3,
+        "discount": 10,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/psychology_2.jpg",
+        "date": "2024-05-03T12:39:15.477Z",
+        "resource": "",
+        "length": 35
+    }
+},
+{
+    "model": "Nipracademy.course",
+    "pk": 8,
+    "fields": {
+        "name": "data science",
+        "slug": "data science",
+        "description": "this is a subject used in engineering.",
+        "price": 5000,
+        "duration": 1,
+        "discount": 15,
+        "active": true,
+        "thumbnail": "media/thumbnail_image/data_science.jpg",
+        "date": "2024-05-15T19:42:57.352Z",
+        "resource": "",
+        "length": 60
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 1,
+    "fields": {
+        "description": "python",
+        "course": 1
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 2,
+    "fields": {
+        "description": "english",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 3,
+    "fields": {
+        "description": "spoken",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 5,
+    "fields": {
+        "description": "testing phase",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 6,
+    "fields": {
+        "description": "statistics",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 7,
+    "fields": {
+        "description": "mathematics",
+        "course": 5
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 8,
+    "fields": {
+        "description": "adddtion",
+        "course": 5
+    }
+},
+{
+    "model": "Nipracademy.tag",
+    "pk": 9,
+    "fields": {
+        "description": "hindi",
+        "course": 6
+    }
+},
+{
+    "model": "Nipracademy.prerequisite",
+    "pk": 1,
+    "fields": {
+        "description": "basic english",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.prerequisite",
+    "pk": 2,
+    "fields": {
+        "description": "grammar",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.prerequisite",
+    "pk": 4,
+    "fields": {
+        "description": "class8",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.prerequisite",
+    "pk": 5,
+    "fields": {
+        "description": "class 7-Hindi knowledge",
+        "course": 6
+    }
+},
+{
+    "model": "Nipracademy.prerequisite",
+    "pk": 6,
+    "fields": {
+        "description": "bsc in psychology science",
+        "course": 7
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 1,
+    "fields": {
+        "description": "python programming",
+        "course": 1
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 2,
+    "fields": {
+        "description": "frequent english spoken",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 3,
+    "fields": {
+        "description": "skill development",
+        "course": 2
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 7,
+    "fields": {
+        "description": "mean",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 8,
+    "fields": {
+        "description": "median",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 9,
+    "fields": {
+        "description": "mode",
+        "course": 4
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 10,
+    "fields": {
+        "description": "poems",
+        "course": 6
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 11,
+    "fields": {
+        "description": "literature",
+        "course": 6
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 12,
+    "fields": {
+        "description": "hindi-grammer",
+        "course": 6
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 13,
+    "fields": {
+        "description": "what is psychology?",
+        "course": 7
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 14,
+    "fields": {
+        "description": "how to read human mind?",
+        "course": 7
+    }
+},
+{
+    "model": "Nipracademy.learning",
+    "pk": 15,
+    "fields": {
+        "description": "how to read human face by interaction?",
+        "course": 7
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 1,
+    "fields": {
+        "title": "lecture 1",
+        "course": 1,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/10_Diamond_Patter.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 2,
+    "fields": {
+        "title": "english lecture 1",
+        "course": 2,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/4.Big_O_Notation.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 3,
+    "fields": {
+        "title": "python lecture 2",
+        "course": 1,
+        "serial_number": 2,
+        "video_id": null,
+        "video": "media/video_files/12.Bubble_Sort_Analysis_video.mp4",
+        "ppt": "",
+        "Notes": "media/Notes_files/minor_report.pdf",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 5,
+    "fields": {
+        "title": "english lecture 2",
+        "course": 2,
+        "serial_number": 2,
+        "video_id": null,
+        "video": "media/video_files/5_Removing_Cycle_Explanation_Math.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": false
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 6,
+    "fields": {
+        "title": "statistics lecture 1",
+        "course": 4,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/16.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 7,
+    "fields": {
+        "title": "statistics lecture 2",
+        "course": 4,
+        "serial_number": 2,
+        "video_id": null,
+        "video": "media/video_files/10b_Comparison_Table.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": false
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 8,
+    "fields": {
+        "title": "statistics leacture 3",
+        "course": 4,
+        "serial_number": 3,
+        "video_id": null,
+        "video": "media/video_files/10a_Tree_map.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": false
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 9,
+    "fields": {
+        "title": "lecture 1",
+        "course": 5,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/10_Sum_Of_a_b_Input_From_User.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 10,
+    "fields": {
+        "title": "lecture 1",
+        "course": 6,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/12.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 11,
+    "fields": {
+        "title": "lecture 1",
+        "course": 7,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/8_Validate_BST.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 12,
+    "fields": {
+        "title": "lecture 1",
+        "course": 8,
+        "serial_number": 1,
+        "video_id": null,
+        "video": "media/video_files/1_What_are_Flowcharts.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": true
+    }
+},
+{
+    "model": "Nipracademy.video",
+    "pk": 13,
+    "fields": {
+        "title": "lecture 2",
+        "course": 8,
+        "serial_number": 2,
+        "video_id": null,
+        "video": "media/video_files/2_Flowchart_Components.mp4",
+        "ppt": "",
+        "Notes": "",
+        "is_preview": false
+    }
+},
+{
+    "model": "Nipracademy.contact",
+    "pk": 1,
+    "fields": {
+        "name": "vivek singh",
+        "email": "vivekkumarsharma7870@gmail.com",
+        "phone": "7369985487",
+        "desc": "i am testing the feature of messaging after the success of the form page in this contact us page."
+    }
+},
+{
+    "model": "Nipracademy.offlineaddress",
+    "pk": 1,
+    "fields": {
+        "branchname": "2024-03-09 20:29:30.401904+00:00",
+        "address": "this is a new branch of Nipracademy for more you can contact us usisng this button in this page below",
+        "contact": 8541023100
+    }
+},
+{
+    "model": "Nipracademy.offlineaddress",
+    "pk": 2,
+    "fields": {
+        "branchname": "2024-03-09 20:29:30.401904+00:00",
+        "address": "this is another address testing feature for this address feature",
+        "contact": 9632587410
+    }
+},
+{
+    "model": "Nipracademy.offlineaddress",
+    "pk": 3,
+    "fields": {
+        "branchname": "Bhopal Branch",
+        "address": "MIG 1, shiv kalp colony, ayodhya bypass, bhopal",
+        "contact": 2134656896
+    }
+},
+{
+    "model": "Nipracademy.faculties",
+    "pk": 2,
+    "fields": {
+        "name": "Nitin kumar",
+        "qualifications": "Entrepreneur",
+        "images": "media/faculties_img/Nipracademy_head.png"
+    }
+},
+{
+    "model": "Nipracademy.faculties",
+    "pk": 3,
+    "fields": {
+        "name": "Vivek kumar",
+        "qualifications": "Btech - TIT ,Bhopal",
+        "images": "media/faculties_img/WIN_20240211_01_49_09_Pro.jpg"
+    }
+},
+{
+    "model": "Nipracademy.homepage_image",
+    "pk": 1,
+    "fields": {
+        "pic": "media/homepage_images/pre.png"
+    }
+},
+{
+    "model": "Nipracademy.homepage_image",
+    "pk": 2,
+    "fields": {
+        "pic": "media/homepage_images/foundation.png"
+    }
+},
+{
+    "model": "Nipracademy.homepage_image",
+    "pk": 3,
+    "fields": {
+        "pic": "media/homepage_images/IIT-JEE.png"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$bOvmEd2vkw5jG86xr6X2Vi$gly2gKnGuBkSeycnDac8tKrUDSg3vXaMEbuad30rxsw=",
+        "last_login": "2024-08-07T18:44:31.814Z",
+        "is_superuser": true,
+        "username": "vivekkumar",
+        "first_name": "",
+        "last_name": "",
+        "email": "vivekkumarsharma7870@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-08T17:55:21.716Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$gXtwEmCGRrDzqGnbh4ucKP$PJhATwR597nTdt4lW+yMUrlmb5E/dPc0Tcap0stSTdo=",
+        "last_login": "2024-03-27T16:49:07.274Z",
+        "is_superuser": false,
+        "username": "soumya@thakur",
+        "first_name": "",
+        "last_name": "",
+        "email": "soumyathakur123@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-03-11T19:56:48Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-03-08T17:56:19.729Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "comment"
+        ],
+        "object_id": "1",
+        "object_repr": "Comment object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-03-08T18:00:22.565Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "python programming",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (1)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (1)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-03-09T19:56:58.221Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "offlineaddress"
+        ],
+        "object_id": "1",
+        "object_repr": "this is a new branch of Nipracademy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-03-09T20:10:39.566Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "offlineaddress"
+        ],
+        "object_id": "1",
+        "object_repr": "this is a new branch of Nipracademy",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-03-09T20:11:20.768Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "offlineaddress"
+        ],
+        "object_id": "1",
+        "object_repr": "this is a new branch of Nipracademy for more you can contact us usisng this button in this page below",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-03-09T20:18:52.472Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "offlineaddress"
+        ],
+        "object_id": "2",
+        "object_repr": "this is another address testing feature for this address feature",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-03-09T20:30:57.885Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "offlineaddress"
+        ],
+        "object_id": "3",
+        "object_repr": "MIG 1, shiv kalp colony, ayodhya bypass, bhopal",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-03-10T09:54:43.841Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "english speaking",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (2)\"}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (3)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (2)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (3)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (1)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (2)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"english lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-03-10T20:08:20.361Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "usercourse"
+        ],
+        "object_id": "1",
+        "object_repr": "vivekkumar - python programming",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-03-10T20:08:30.648Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "1",
+        "object_repr": "Payment object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Payment id\", \"User course\", \"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-03-10T20:10:10.311Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "python lecture 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-03-11T10:55:47.339Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "python lecture 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Notes\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-03-11T10:59:56.093Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "video"
+        ],
+        "object_id": "3",
+        "object_repr": "python lecture 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is preview\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.862Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "11",
+        "object_repr": "Payment object (11)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.874Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "10",
+        "object_repr": "Payment object (10)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.889Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "9",
+        "object_repr": "Payment object (9)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.903Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "8",
+        "object_repr": "Payment object (8)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.916Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "7",
+        "object_repr": "Payment object (7)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.929Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "6",
+        "object_repr": "Payment object (6)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.942Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "5",
+        "object_repr": "Payment object (5)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.951Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "4",
+        "object_repr": "Payment object (4)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.969Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "3",
+        "object_repr": "Payment object (3)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-03-11T18:39:01.981Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "payment"
+        ],
+        "object_id": "2",
+        "object_repr": "Payment object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-03-11T19:01:12.027Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "3",
+        "object_repr": "IIT-JEE ( one year classroom)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (4)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (4)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (5)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (6)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (3)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-03-11T19:56:49.244Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "soumyathakur123@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-03-11T19:59:25.951Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "soumya@thakur",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-03-12T20:37:32.924Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "3",
+        "object_repr": "IIT-JEE ( one year classroom)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-03-12T20:40:55.137Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "soumya@thakur",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-03-12T21:34:35.490Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "2",
+        "object_repr": "english speaking",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"video\", \"object\": \"english lecture 2\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-03-18T19:49:21.140Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "statistics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (5)\"}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (6)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (7)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (8)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (9)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (4)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"statistics lecture 1\"}}, {\"added\": {\"name\": \"video\", \"object\": \"statistics lecture 2\"}}, {\"added\": {\"name\": \"video\", \"object\": \"statistics leacture 3\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-03-24T19:42:27.058Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "3",
+        "object_repr": "Faculties object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Qualifications\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-03-24T19:43:09.066Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "3",
+        "object_repr": "Faculties object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Qualifications\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-03-24T20:33:12.916Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "soumya@thakur",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-04-03T20:16:39.449Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "3",
+        "object_repr": "Faculties object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Faculties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-04-03T20:32:51.537Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "3",
+        "object_repr": "Faculties object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Qualifications\", \"Faculties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-04-03T20:34:50.403Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "2",
+        "object_repr": "Faculties object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Qualifications\", \"Faculties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-04-03T20:34:58.940Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "1",
+        "object_repr": "Faculties object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-04-03T21:19:12.856Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "homepage_image"
+        ],
+        "object_id": "1",
+        "object_repr": "Homepage_image object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-04-03T21:19:23.406Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "homepage_image"
+        ],
+        "object_id": "2",
+        "object_repr": "Homepage_image object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-04-03T21:19:35.443Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "homepage_image"
+        ],
+        "object_id": "3",
+        "object_repr": "Homepage_image object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-04-03T21:50:45.195Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "faculties"
+        ],
+        "object_id": "3",
+        "object_repr": "Faculties object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Faculties\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-04-04T18:14:40.703Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (7)\"}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (8)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-04-04T18:50:47.485Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics - 3 months",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-04-16T08:03:07.607Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tag\", \"object\": \"Tag object (9)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (10)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (11)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (12)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (5)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-04-16T18:48:46.805Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-04-16T19:14:25.482Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics - 3 months",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-05-03T12:39:15.549Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "7",
+        "object_repr": "psychology",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (13)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (14)\"}}, {\"added\": {\"name\": \"learning\", \"object\": \"Learning object (15)\"}}, {\"added\": {\"name\": \"prerequisite\", \"object\": \"Prerequisite object (6)\"}}, {\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-05-15T19:34:36.419Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-05-15T19:34:54.037Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics - 3 months",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-05-15T19:40:02.077Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-05-15T19:42:57.354Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "8",
+        "object_repr": "data science",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-05-15T20:03:08.654Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "7",
+        "object_repr": "psychology",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-05-15T20:03:18.332Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics - 3 months",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-05-15T20:03:30.108Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "1",
+        "object_repr": "python programming",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Duration\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-05-30T20:01:42.340Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "8",
+        "object_repr": "data science",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"video\", \"object\": \"lecture 1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-05-30T20:02:11.955Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "8",
+        "object_repr": "data science",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"video\", \"object\": \"lecture 2\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2024-05-30T20:05:36.804Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "8",
+        "object_repr": "data science",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2024-05-30T20:05:47.431Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2024-05-30T20:06:00.699Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "statistics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2024-05-30T20:07:43.928Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "statistics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2024-05-30T20:09:11.009Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "4",
+        "object_repr": "statistics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2024-05-30T20:11:04.656Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "6",
+        "object_repr": "Hindi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2024-05-30T20:12:33.860Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "7",
+        "object_repr": "psychology",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2024-05-30T20:20:49.103Z",
+        "user": [
+            "vivekkumar"
+        ],
+        "content_type": [
+            "Nipracademy",
+            "course"
+        ],
+        "object_id": "5",
+        "object_repr": "mathmatics - 3 months",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "this is a comment page",
+        "created_at": "2024-03-09T18:29:14.302Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "comment should be above the page",
+        "created_at": "2024-03-09T18:29:38.366Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "i have a doubt about this page",
+        "created_at": "2024-03-09T18:32:35.508Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "we can add any comment here",
+        "created_at": "2024-03-09T18:41:55.143Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "all the comments are disp;layed here",
+        "created_at": "2024-03-10T14:39:38.677Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "soumya@thakur"
+        ],
+        "content": "this is a comment by soumya thakur",
+        "created_at": "2024-03-24T20:34:10.954Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "soumya@thakur"
+        ],
+        "content": "this is my second comment for testing.",
+        "created_at": "2024-03-24T21:02:07.608Z"
+    }
+},
+{
+    "model": "Nipracademy.comment",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "content": "Add this comment",
+        "created_at": "2024-04-04T18:17:06.833Z"
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 1,
+    "fields": {
+        "order_id": "order_NkmEMPXcSg6s03",
+        "payment_id": "pay_NkmJ1gpVXiMKCR",
+        "user_course": 1,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 1,
+        "date": "2024-03-10T20:01:28.417Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 12,
+    "fields": {
+        "order_id": "order_Nl9MckQcknx24C",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:39:15.160Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 13,
+    "fields": {
+        "order_id": "order_Nl9RWVcbEP6Btl",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:43:53.489Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 14,
+    "fields": {
+        "order_id": "order_Nl9S1DGIhFMEfr",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:44:21.437Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 15,
+    "fields": {
+        "order_id": "order_Nl9T7hbV5knrie",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:45:24.155Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 16,
+    "fields": {
+        "order_id": "order_Nl9YBgqOC4nU6W",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:50:11.951Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 17,
+    "fields": {
+        "order_id": "order_Nl9aUjL1UrCRpe",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T18:52:23.036Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 32,
+    "fields": {
+        "order_id": "order_NlAQfeHETLamfy",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T19:41:47.045Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 33,
+    "fields": {
+        "order_id": "order_NlATeSe0k2f8rO",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T19:44:36.213Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 34,
+    "fields": {
+        "order_id": "order_NlATpKPj0WzKfL",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-11T19:44:46.044Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 36,
+    "fields": {
+        "order_id": "order_NlAkDEj1Togjt8",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 1,
+        "date": "2024-03-11T20:00:16.865Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 38,
+    "fields": {
+        "order_id": "order_NlZ9SSTNMCLS7b",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 2,
+        "date": "2024-03-12T19:52:48.888Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 39,
+    "fields": {
+        "order_id": "order_NlZJI0bIauhsgP",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 2,
+        "date": "2024-03-12T20:02:07.244Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 41,
+    "fields": {
+        "order_id": "order_NlZMkfoPA46okl",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 2,
+        "date": "2024-03-12T20:05:23.933Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 43,
+    "fields": {
+        "order_id": "order_NlZUlPGWSefcSk",
+        "payment_id": "pay_NlZWVxOUQFuUP5",
+        "user_course": 4,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-12T20:12:58.953Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 45,
+    "fields": {
+        "order_id": "order_NlZzD8TNvSwChg",
+        "payment_id": "pay_NlZzme2qQ9HK2V",
+        "user_course": 7,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 1,
+        "date": "2024-03-12T20:41:48.379Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 46,
+    "fields": {
+        "order_id": "order_NnwJ3BKkLxkXpz",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 4,
+        "date": "2024-03-18T19:49:52.390Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 47,
+    "fields": {
+        "order_id": "order_NnwL5VNktHUVbh",
+        "payment_id": "pay_NnwLYqpemPAtfm",
+        "user_course": 8,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 4,
+        "date": "2024-03-18T19:51:48.003Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 48,
+    "fields": {
+        "order_id": "order_NrS2HC0isZWKVV",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 4,
+        "date": "2024-03-27T16:49:10.351Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 49,
+    "fields": {
+        "order_id": "order_NudrJ0V3GcgyUb",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 5,
+        "date": "2024-04-04T18:20:05.645Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 50,
+    "fields": {
+        "order_id": "order_NzgpRSPTOWjBek",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 5,
+        "date": "2024-04-17T12:29:24.129Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 51,
+    "fields": {
+        "order_id": "order_OChIDbNrHk1Xaa",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 5,
+        "date": "2024-05-20T09:23:39.718Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 52,
+    "fields": {
+        "order_id": "order_OChJOfzHxuj8R9",
+        "payment_id": "pay_OChJhSpS90Ik0q",
+        "user_course": 9,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 5,
+        "date": "2024-05-20T09:24:46.585Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 53,
+    "fields": {
+        "order_id": "order_OCiQDku53IQeUM",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 6,
+        "date": "2024-05-20T10:29:55.859Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 54,
+    "fields": {
+        "order_id": "order_OCiRFIhV6212jg",
+        "payment_id": "pay_OCiRe6SEZRA8D6",
+        "user_course": 10,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 6,
+        "date": "2024-05-20T10:30:53.945Z",
+        "status": true
+    }
+},
+{
+    "model": "Nipracademy.payment",
+    "pk": 55,
+    "fields": {
+        "order_id": "order_OGpi66nkhAIcV5",
+        "payment_id": "",
+        "user_course": null,
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 7,
+        "date": "2024-05-30T20:13:44.056Z",
+        "status": false
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 1,
+        "date": "2024-03-10T20:08:20.331Z"
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 4,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 2,
+        "date": "2024-03-12T20:14:47.151Z"
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "soumya@thakur"
+        ],
+        "course": 1,
+        "date": "2024-03-12T20:42:39.418Z"
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 8,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 4,
+        "date": "2024-03-18T19:52:23.871Z"
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 9,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 5,
+        "date": "2024-05-20T09:25:13.452Z"
+    }
+},
+{
+    "model": "Nipracademy.usercourse",
+    "pk": 10,
+    "fields": {
+        "user": [
+            "vivekkumar"
+        ],
+        "course": 6,
+        "date": "2024-05-20T10:31:26.413Z"
+    }
+}
+]
