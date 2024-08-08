@@ -1,0 +1,76 @@
+{% extends 'Nipracademy/base.html' %}
+{% load Nipracademy_custom_tags %}
+{% load static %}
+{%block title%} About Us {% endblock %}
+{% block content %}
+<style>
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        font-family:monospace;
+        font-weight:bold;
+        font-size:15px;
+    }
+    @media and screen(min-width:250px;){
+        .center{
+            max-width:100%;
+        }
+    }
+</style>
+<div class="image">
+    <img src="{% static 'image\head.png' %}" class="center">      
+</div>
+<div>
+    <p>Being an entrepreneur, I have always been driven by the desire to make a
+        positive impact in the lives of others. It was during my visits to the 
+        village of Khemchand Bigha in Aurangabad, Bihar, that I found the 
+        inspiration to focus my efforts on education. Interacting with the young 
+        students there, I came face to face with the challenges they encountered 
+        and the things they needed but did not have access to. One of the most 
+        pressing issues I discovered was the lack of affordable and quality education.<br><br>
+
+        Witnessing the struggles these students faced in their journey towards 
+        acquiring a good education from a young age, I became determined to find 
+        a solution. Thus, I decided to establish a startup that would be solely 
+        dedicated to providing educational opportunities for students in need. 
+        Our mission is simple yet profound: to make learning accessible and 
+        affordable for all.<br><br>
+        
+        We firmly believe that education is the key to empowerment. It equips 
+        individuals with the necessary tools to navigate the complexities of 
+        the world and discover their place within it. It broadens horizons 
+        by exposing students to new ideas and concepts, enabling them to 
+        better appreciate and improve both themselves and their surroundings.<br><br>
+        
+        Continuously investing in education not only helps individuals create 
+        valuable connections but also enhances their marketable skills, 
+        enabling them to thrive both personally and professionally. Moreover, 
+        through education, we gain a deeper understanding of people, bridging 
+        gaps and fostering harmony within diverse communities.<br><br>
+        
+        To achieve our mission, we have developed a comprehensive online 
+        education platform that offers high-quality learning resources at 
+        an affordable price point. This ensures that every student, 
+        regardless of their financial background, can access the resources 
+        they need to succeed. However, we are not limiting ourselves to 
+        online education alone. Recognizing the importance of physical 
+        interaction and community engagement, we are actively organizing 
+        offline classes in rural areas as well. We firmly believe that 
+        education should know no boundaries and that students in even the 
+        most remote areas should have access to quality education.<br><br>
+        
+        In our journey towards providing accessible education opportunities 
+        for all, we invite and encourage others to join us. Together, we can 
+        empower aspiring learners with knowledge and unlock their true potential. 
+        By working collectively, we aim to create a world where education is 
+        not a privilege, but a basic human right that is accessible to all.<br><br>
+    </p>   
+</div>
+<div class="text-center">
+    <a type="button" class="btn btn-primary" href="{% url 'faculty_page'%}">Our Faculties</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends 'Nipracademy/base.html' %}
+{% load Nipracademy_custom_tags %}
+{% load static %}
+{%block title%}
+Signup
+{% endblock %}
+
+{%block content%}
+<style>
+   body{
+      background-color:black; 
+   }
+   .signup{
+      font-family:'comfortaa', sans-serif;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+      background: #3B5D7F;
+      color:black;
+      width:100%;
+      margin:5px;
+      box-shadow: 0 0 40px 15px #48abe0,
+                  0 0 20px 7px #ebecca;
+      
+   }
+   input{
+      background-color:#3B5D7F;
+   }
+   input:hover{
+      box-shadow:0 0 10px 5px #48abe0;
+      border:1px solid #ff0000;
+      background-color:white;
+      
+   }
+   #submit{
+      background-color:rgb(205, 104, 15);
+      
+   }
+   @media screen and (min-width:250px){
+      #submit{
+         max-width:100%;
+      }
+      input{
+         max-width:100%;
+      }
+      input:hover{
+         max-width:100%;
+      }
+      label{
+         max-width:100%;
+      }
+      .signup{
+         max-width:100%;
+      }
+      #signup_logo{
+         max-width:100%;
+      }
+      body{
+         max-width:100%;
+         min-width:20%;
+      }
+   }
+
+</style>
+<br><div class="signup">
+   <div class="text-center" id="signup_logo">
+      <img src="{%static 'image\2.jpg'%}" class="rounded" alt="no image found" height=70 width=70 >
+   </div>
+<br>
+   <div>
+      <form action="/signup" method="POST">
+         {% csrf_token %}
+         {{form.as_p}}
+
+         <input id="submit" type="submit" value="Register">
+        
+      </form>
+   </div>
+</div>
+<br>
+{%endblock%}

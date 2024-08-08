@@ -1,0 +1,157 @@
+{% extends 'Nipracademy/base.html' %}
+{% load static %}
+{% load Nipracademy_custom_tags %}
+{% load crispy_forms_tags %}
+
+{%block title%}
+Courses
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/scrollbar.css'%}">
+
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/course_page.js' %}"></script>
+{% endblock %}
+
+{%block content%}
+
+<style>
+    .no-preview{
+        cursor: not-allowed;
+    }   
+    a:hover{
+        text-decoration: none;
+    }
+
+    a{
+        color: rgb(61, 59, 59);
+    }
+
+    .active-video-link{
+        color: rgb(206, 202, 196);
+    }
+
+    .active-video-link:hover{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+</style>
+<div class="container-fluid">
+    <div>
+        <br>
+        <div class="card p-3">
+            <div class="row">
+                <!-- video player -->
+                <div class="col">
+                    <div class="mx-auto">
+                        <div id="player" >
+                            <video class="mx-auto" width="100%" height="auto" controls>
+                                <source src="{{ video.video.url }}"  type="video/mp4">
+                            </video>
+                        </div>    
+                    </div>
+                </div>
+
+                <!-- lecture list -->
+                <div class="lecture-list">
+                    <ul id='video_list' class="list-group overflow-y-scroll">
+
+                        {% is_enrolled request course as enrolled %}
+                            {% for v in videos %}
+                                <li
+                                class="list-group-item {% if v == video %} active-video {% endif %} ">
+                                <a class="
+                             
+                                {% if not enrolled and not v.is_preview %} text-muted no-preview {% endif %}
+                                {% if v == video %} active-video-link {% endif %}
+                             
+                                " href="?lecture={{v.serial_number}}">
+                                    {{v}}
+                                </a>
+                                </li>
+                            {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- course details -->
+
+        <div class="mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{course.name}}</h5>
+                    <p class="card-text">{{course.description}}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Prerequite -->
+        <div class="mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Prerequisite</h5>
+                    <p class="card-text">
+                    <ol>
+                        {% for pre in course.prerequisite_set.all %}
+                        <li class="">{{pre.description}}</li>
+                        {% endfor %}
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learnngs -->
+        <div class="mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Learnings</h5>
+                    <p class="card-text">
+                    <ol>
+                        {% for l in course.learning_set.all %}
+                        <li class="">{{l.description}}</li>
+                        {% endfor %}
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- learning end -->
+        <br>
+        <div class="mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Download Notes</h5>
+                    
+                    <p class="card-text">
+                    <ol>
+                        {% if video.Notes %}
+                            <p class="card-text">Download presentations from the lecture</p>
+                            <a href="{{video.Notes.url}}" download>
+                            <button type="button" class="button-les"><span>Get Files</span></button>
+                            </a>
+                        {% else %}
+                            <p class="card-text" > No Notes available</p>
+                        {% endif %}
+                    </ol>
+                    </p>
+                </div>
+            </div>
+        </div>
+     <br>
+    </div>
+    <div class=" gap-1 col-2 mx-auto">
+        <div class="d-inline p-2 text-bg-primary ">
+            <a class="btn btn-primary" href="{% url 'comment_page'%}" role="button">Comment here!</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

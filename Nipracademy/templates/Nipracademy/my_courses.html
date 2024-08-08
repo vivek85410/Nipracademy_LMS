@@ -1,0 +1,48 @@
+{% extends 'Nipracademy/base.html' %}
+{% load Nipracademy_custom_tags %}
+{%block title%}
+Signup
+{% endblock %}
+
+{%block content%}
+<style>
+    body{
+        background-color:white;
+    }
+    p{
+        font-family:calibrie;
+    }
+    .card{
+        border:inset;
+        border-width:10px;
+    }
+</style>
+
+<div class="container">
+   <p class="display-6 text-center">My Courses </p>
+   <br>
+   <div class="row">
+      {% for uc in user_courses %}
+      <div class="col mx-auto">
+          <div class="card mx-auto" style="width: 18rem;">
+              <img class="card-img-top" src="{{uc.course.thumbnail.url}}" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">{{uc.course.name}}</h5>
+              </div>
+            
+              <div class="card-footer p-0">
+                  
+                  <div class="row no-gutters">
+                      <div class="col  text-center">
+                        <br>
+                          <a href="/course/{{uc.course.slug}}" class="btn btn-primary btn btn-block border-2">Start Course</a>
+                      </div>
+                  </div>
+                  <br>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+{%endblock%}

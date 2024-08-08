@@ -1,0 +1,188 @@
+{% extends 'Nipracademy/base.html' %}
+{% load Nipracademy_custom_tags %} 
+{%block title%}Courses{% endblock %}
+{%load static%}
+
+{%block content%}
+
+<style>
+    .price{
+        font-size: 20px;
+    }
+    .card{
+        border:inset;
+        border-width:10px;
+        
+    }
+    #info_button{
+        max-width:50%;
+        width:10vw;
+        
+    }
+    #feature_courses{
+        font-family: Lucida Sans;
+        text-align: center;
+        font-size:75px;
+    }
+    #homepage_images{
+        border-style:groove;
+        border-width:20px;
+        border-color:brown;
+        padding:5px;
+        margin:5px;
+        margin-bottom:10px;
+
+    }
+    .founder{
+        margin-top:30px;
+        padding:5vw;
+        border-style:unset;
+        border-width:30px;
+        border-radius:25%;
+        border-color:black;
+
+    }
+    #About_button{
+        border-style:ridge;
+        border-width:10px;
+        border-radius:45%;
+
+    }
+    #Nipra_head{
+        align-items:center;
+    
+    }
+    @media screen and (max-width:250px){
+        .card{
+            max-width:100%;
+            border:ridge;
+            border-radius:10%;
+            border-width:20px;
+            border-color:rgb(76, 5, 5);
+        }
+        #info_button{
+            max-width:100%;
+        }
+        #About_button{
+            max-width:100%;
+        }
+        #homepage_images{
+            max-width:100%;
+        }
+        #feature_courses{
+            font-family: Lucida Sans;
+            text-align: center;
+            font-size:100%;
+        }
+        #head_text{
+            max-width:100%;
+        }
+        #Nipra_head{
+        max-width:70%;
+        }
+}
+</style>
+
+<div class="container" id = "homepage_images">
+    <!-- section 1 for homepage images-->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for i in home_image %}
+        <div class="carousel-item active">
+                <img src="{{ i.pic.url}}" class="d-block w-100" alt="No image" height="auto">           
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+</div>  
+
+
+
+<section class="text-center" id="head_text">
+    <div class="founder mb-3" style="max-width: 1500px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <div class="container">
+          <img src="{% static 'image\head.png' %}" class="img-circle" id="Nipra_head" alt="No image found" width=auto>
+        </div>
+      </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title" style="color:#000000;">Nitin kumar</h3>
+            <h5 class="mb-5 font-weight-bold" style="color:#000000;">Founder/CEO</h5>
+            <p class="card-text">Hello, how are you all? I can relate to the challenges life 
+              presents, having endured my own share of rough patches. Differentiating
+               oneself often hinges on qualities such as diligence, resilience, 
+               steadfastness, and a deep-seated passion for life. </p>
+        </div>
+      </div>
+        <a class="btn btn-primary" id="About_button" style="background-color:black" href="{% url 'About_us'%}"  role="button">For more</a>       
+      
+      </div>
+    </div>
+</section>
+
+<div class="container-fluid">
+    <h1 class = "text-center" id="feature_courses"><strong>Featured Courses</strong></h1><br>
+    <div class="row">
+            {% for course in courselist %}
+        <div class = "col mx-auto">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="{{course.thumbnail.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{course.name}}</h5>
+                    <p class="card-text m-0 p-0">
+                        Save {{course.discount}}%
+                        <br>
+                        <span class="price">
+                            <del>{{course.price|rupee}}</del>
+                            &nbsp;
+                            <span>{% cal_sellprice course.price course.discount as value %} {{value|rupee}}</span>
+                        </span>
+                    </p>
+                </div>
+                
+                <div class = "card-footer p-0 ">
+                    {% is_enrolled request course as enrolled %}
+                    <div class="row no-gutters">
+                        {% if enrolled %}
+                        <div class="col text-center">
+                            
+                            <a href="/course/{{course.slug}}" class="btn btn-primary btn btn-block border-2">Start Course</a>
+                        </div>
+                        {% else %}
+                        <div class="col border-right-1">
+                           
+                            <a href = "/check-out/{{course.slug}}" class="btn btn-light btn-block">Enroll Now</a>
+                        </div>
+                        <div class="col border-left-1">
+                           
+                            <a href = "/course/{{course.slug}}" class="btn btn-light btn-block">show more</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+        </div>
+      {% endfor %} 
+    </div>
+</div>
+<br>
+<div class="offline  col-2 mx-auto" id="info_button">
+    <div class="d-inline  text-bg-primary ">
+        <a class="btn btn-primary" href="{% url 'Allcourses'%}" role="button">All courses</a>
+    </div>
+</div>
+
+<br>
+
+<div class="offline  col-2 mx-auto" id="info_button">
+    <div class="d-inline  text-bg-success ">
+        <a class="btn btn-success" href="{% url 'address_page'%}" role="button">For Offline Batches!</a>
+    </div>
+</div>
+
+{%endblock%}

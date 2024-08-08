@@ -1,0 +1,76 @@
+{% extends 'Nipracademy/base.html' %}
+{% load Nipracademy_custom_tags %}
+{%load static%}
+{%block title%}
+Signup
+{% endblock %}
+
+{%block content%}
+<style>
+.Login{
+   font-family:calibrie;
+   text-align:left;
+   border:5px;
+   width:50%;
+   border-style:outset;
+   border-radius:2%;
+   padding:30px;
+   background-color:white;  
+}
+body{
+   background-image:url({%static 'image\login_2.jpg'%});
+   background-size:100% 60%;
+   background-repeat:no-repeat;
+
+}
+@media screen and (min-width:250px){
+   .Login{
+      max-width:70%;
+      background-size:100%;
+      border-width:100%;
+      margin-left:70px;
+      margin-right:100px;
+   }
+   input{
+      max-width:100%;
+   }
+   p{
+      max-width:100%;
+   }
+   label{
+      max-width:100%;
+   }
+   #login_logo{
+      max-width:100%;
+   }
+   body{
+      max-width:100%;
+      min-width:70%;
+   }
+}
+
+</style>
+<div class="Login">
+   <div class="text-center" id="login_logo">
+      <img src="{%static 'image\2.jpg'%}" class="rounded" alt="no image found" height=70 width=70 >
+   </div>
+   <br>
+   <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Log in</h3>
+   
+   <form method="post" action="">
+      {% csrf_token %}
+      {{form.as_p}}
+
+      <input type="submit" value="Login">
+      <br>
+      <div class="ms-auto">
+         <p><a class="text-grey-800" href="{% url 'password_reset' %}">Forgotten Password ?</a></p>
+      </div>
+      <br>
+      <p>Don't have an account? <a href="/signup" class="link-info">Register here</a></p>
+      <br>
+   </form> 
+</div>
+
+
+{%endblock%}

@@ -1,0 +1,106 @@
+{% extends 'Nipracademy/base.html' %}
+{% load static %}
+{% block title %} Contact Us {% endblock %}
+
+{% block content %}
+<style>
+    body{
+        background-color:black;
+    }
+    h1{
+        font-family:'comfortaa', sans-serif;
+    }
+    .contact_form{
+        margin-top:30px;
+        margin-left:30px;
+        margin-right:30px;
+        margin-bottom:100px;
+        border-style:groove;
+        border-width:20px;
+        padding:25px;
+        border-radius:15%;
+        background-image:url({%static 'image\contact4.jfif'%});
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        box-shadow: 0 0 40px 15px #48abe0,
+                  0 0 20px 7px #ebecca;
+    }
+    label{
+        font-size: larger;
+        font-family:calibrie;
+    }
+    input:hover{
+        width:50%;
+        background-color:#1D6B63;
+    }
+    textarea:hover{
+        width:50%;
+        background-color:#1D6B63;
+    }
+    #contact_image{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width:40%;
+        height:auto;
+        border-radius:30%;
+    }
+    
+    @media screen and(min-width:250px){
+        #contact_image{
+            max-width: 100%
+            
+        }
+        input{
+            max-width: 100%;
+        }
+        textarea{
+            max-width:100%;
+        }
+        label{
+            max-width:100%;
+        }
+        .suggestions{
+            max-width:100%;
+        }
+        #submit{
+            max-width:100%;
+        }
+    }
+</style>
+
+
+<main class="mt-5">
+    <div class="contact_form">
+        <h1 class="text-center">Contact Us </h1>
+        <div class="container my-4 px-4">
+            <form method="POST" action="{% url 'details' %}">
+            {% csrf_token %}
+                <img id="contact_image" src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710547200&semt=ais" alt="No image found">
+            <br>
+            <div class="form-group">
+              <label for="name" class="form-label">Your name</label>
+              <input type="text" class="form-control" id="name" name='name' placeholder="eg. xyz" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email" >email id:</label>
+              <input type="email" class="form-control" id="email" name='email' placeholder="xyz@gmail.com" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="Phone" >phone number :</label>
+              <textarea class="form-control" id="phone no" name='phone' placeholder="10 digit phone number" rows="1"></textarea required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="contact" >your details here :</label>
+              <textarea class="form-control" id="contact details" name='desc'placeholder="your suggestion here" rows="3"></textarea>
+            </div>
+            <br>
+            <button id="submit"class="btn btn-primary" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

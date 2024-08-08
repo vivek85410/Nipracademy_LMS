@@ -1,0 +1,33 @@
+{% extends 'Nipracademy/base.html' %}
+{% load static %}
+{% load Nipracademy_custom_tags %} 
+{% load crispy_forms_tags %}
+{%block title%}Offline centers{% endblock %}
+{% block content%}
+
+<div class = "container">
+        <div class="address-list">
+            <h5 class="card-title"><strong>Branch Information</strong></h5><br>
+            <ul>
+                {% for addresses in address %}
+                <div class="card mb-3" style="max-width: 1000px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{% static 'image\NIPRACADEMY.png' %}" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{addresses.branchname}}</h5><br>
+                            <strong>Address : </strong>{{ addresses.address }}<br><br>
+                            <strong> contact : </strong>{{addresses.contact}}<br>
+                
+                            <br><a class="btn btn-primary" href="{% url 'details'%}" role="button">For more</a><br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
+                {% endfor %}
+            </ul>
+        </div>
+</div>
+{%endblock content%}
